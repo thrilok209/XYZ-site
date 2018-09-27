@@ -36,7 +36,7 @@ export const routes: Routes = [
     component: LoginPageComponent
   },
   {
-    path: 'userInfo',
-    component: UserinfoPageComponent
+    path: 'Use',
+    component: LoginPageComponent
   }
 ]
