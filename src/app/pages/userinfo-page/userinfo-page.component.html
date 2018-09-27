@@ -1,0 +1,33 @@
+<table class="table table-bordered">
+  <tbody>
+
+    <tr>
+      <th scope="row" >Name:</th>
+      <th >{{user.name}}</th>
+
+    </tr>
+
+    <tr>
+      <th scope="row">Phone Number:</th>
+      <td>((user.phone))</td>
+
+    </tr>
+    <tr>
+      <th scope="row">Email Id:</th>
+      <td>{{user.email}}</td>
+    </tr>
+    <!-- <tr>
+      <th scope="row"></th>
+      <td>((user.email))</td>
+    </tr> -->
+
+  </tbody>
+</table>
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <a class="btn btn-primary" (click)="check()">Edit Info</a>
+
+    </div>
+  </div>
+</div>

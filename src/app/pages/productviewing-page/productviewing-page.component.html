@@ -1,0 +1,38 @@
+<div class="productlisting">
+
+<div class="media">
+  <img class="align-self-center mr-3" src=".../64x64" alt="Generic placeholder image">
+  <div class="media-body">
+    <h5 class="mt-0">{{id}}</h5>
+    <p class="mt-4">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+    <p class="mb-0 mt-4">Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-md-2">
+
+
+          <div class="input-group">
+            <div class="input-group-append" id="button-addon4">
+              <button class="btn btn-outline-secondary" type="button" (click)="changeQuanity(1)">+</button>
+            </div>
+            <input type="text" class="form-control" placeholder="{{productQuantity}}" aria-label="Recipient's username with two button addons" aria-describedby="button-addon4">
+            <div class="input-group-append" id="button-addon4">
+              <button class="btn btn-outline-secondary" type="button" (click)="changeQuanity(-1)">-</button>
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-2">
+          <button type="button" class="btn btn-primary" (click)="addToCart()"[hidden]="cartButton">Add to Cart</button>
+          <p> </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

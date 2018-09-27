@@ -1,0 +1,43 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Product ID</th>
+      <th scope="col">quantity</th>
+      <th scope="col">price/piece</th>
+      <th scope="col">cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let cartDetails of cartProductsId , let index = index ">
+      <th scope="row">{{index}}</th>
+      <td>{{cartDetails.id}}</td>
+      <td>{{cartDetails.quantity}}</td>
+      <td>100</td>
+      <td>{{cartDetails.quantity*100}}</td>
+    </tr>
+    <tr [hidden] = "totalPriceRow">
+      <th scope="row"></th>
+      <td></td>
+      <td></td>
+      <td><strong>Total Price</strong></td>
+      <td>{{totalPrice}}</td>
+    </tr>
+  </tbody>
+</table>
+<div class="container">
+
+<div class="row mt-4">
+  <div class="col-md-8">
+
+  </div>
+  <div class="col-md-2">
+    <button type="button" class="btn btn-primary" (click)="clearCart()" [hidden]="clearCartButton">Clear Cart</button>
+
+  </div>
+  <div class="col-md-2">
+    <button type="button" class="btn btn-primary" (click)="checkout()" [hidden]="checkoutButton">Checkout</button>
+    <p> </p>
+  </div>
+</div>
+</div>
