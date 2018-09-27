@@ -20,7 +20,7 @@ export class HeaderComponent implements OnInit {
 
   logout(){
     this.afAuth.auth.signOut();
-    localStorage.setItem('isLoggedIn' , false)
+    localStorage.setItem('isLoggedIn' , "false")
     localStorage.setItem('email' , '')
     localStorage.setItem('uid' , '')
     this.loginLink=false;

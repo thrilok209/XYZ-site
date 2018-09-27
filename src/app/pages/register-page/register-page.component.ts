@@ -21,6 +21,7 @@ import { HeaderComponent } from '../../component/header/header.component';
 })
 export class RegisterPageComponent implements OnInit {
   errorMsg:string;
+  userId:string;
   constructor(public userDetails: UserDetailsService , public db:AngularFireDatabase ,public afAuth: AngularFireAuth , private router: Router , public headerComponent: HeaderComponent) {
     }
 

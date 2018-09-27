@@ -6,7 +6,6 @@ import { auth } from 'firebase/app';
 
 
 import { Observable } from 'rxjs';
-
 @Injectable({
   providedIn: 'root'
 })
@@ -28,7 +27,7 @@ export class UserDetailsService {
     this.userId=localStorage.getItem('uid')
     this.users = db.list('users')
 
-    this.usersub = this.users.snapshotChanges().subscribe(actions=>{
+     this.users.snapshotChanges().subscribe(actions=>{
       console.log("here")
            actions.forEach(action=>{
              let y = action.payload.toJSON()
