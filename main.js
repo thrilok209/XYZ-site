@@ -240,8 +240,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _pages_cartviewing_page_cartviewing_page_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/cartviewing-page/cartviewing-page.component */ "./src/app/pages/cartviewing-page/cartviewing-page.component.ts");
 /* harmony import */ var _pages_login_page_login_page_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pages/login-page/login-page.component */ "./src/app/pages/login-page/login-page.component.ts");
 /* harmony import */ var _pages_register_page_register_page_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pages/register-page/register-page.component */ "./src/app/pages/register-page/register-page.component.ts");
-/* harmony import */ var _pages_userinfo_page_userinfo_page_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pages/userinfo-page/userinfo-page.component */ "./src/app/pages/userinfo-page/userinfo-page.component.ts");
-
 
 
 
@@ -273,8 +271,8 @@ var routes = [
         component: _pages_login_page_login_page_component__WEBPACK_IMPORTED_MODULE_3__["LoginPageComponent"]
     },
     {
-        path: 'userInfo',
-        component: _pages_userinfo_page_userinfo_page_component__WEBPACK_IMPORTED_MODULE_5__["UserinfoPageComponent"]
+        path: 'Use',
+        component: _pages_login_page_login_page_component__WEBPACK_IMPORTED_MODULE_3__["LoginPageComponent"]
     }
 ];
 
